@@ -125,6 +125,7 @@ body {
   width: 196px;
   height: 55px;
   border: none;
+  color: #020202;
 }
 
 .link {
@@ -183,6 +184,7 @@ body {
   font-weight: 700;
   text-decoration-line: underline;
   border: none;
+  color: #020202;
 }
 
 .grid_card-button:hover {
