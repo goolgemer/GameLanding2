@@ -124,6 +124,11 @@ body {
   background: linear-gradient(180deg, #df6700 0%, #f7ea00 100%);
   width: 196px;
   height: 55px;
+  border: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .header_button:hover {
@@ -256,6 +261,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  flex-direction: column;
 }
 
 .footer_content {
@@ -272,6 +278,12 @@ body {
   font-weight: 700;
 }
 
+.footer_text_content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 .footer_link {
   font-family: Roboto;
   font-size: 16px;
@@ -283,6 +295,7 @@ body {
 .footer_links {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 100%;
 }
 
 .link {
@@ -319,9 +332,9 @@ body {
   height: 70%;
   max-width: 70vw;
   margin-left: 15vw;
-  border-radius: 20px;
+
   border: #ffcf31 solid 5px;
-  background-color: #000000c5;
+  background-color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -432,6 +445,15 @@ body {
     height: 31px;
   }
 
+  .main {
+    padding-top: 10px;
+  }
+
+  .main_title {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
   .main_bullet-img {
     max-width: 95px;
     width: 100%;
@@ -440,6 +462,14 @@ body {
 
   .main_bullet-title {
     font-size: 16px;
+  }
+
+  .main_grid {
+    padding: 5px;
+  }
+
+  .main_about {
+    padding-top: 20px;
   }
 
   .main_about-text {
@@ -452,10 +482,20 @@ body {
     height: auto;
   }
 
+  .header {
+    padding-top: 20px;
+  }
+
   .header_hero-img {
     display: block;
-    max-width: 80%;
+    max-width: 100%;
     margin-right: 10%;
+  }
+
+  .header_heading {
+    margin-top: 0;
+    font-size: 32px;
+    font-weight: 700;
   }
 
   .header_paragraph {
@@ -463,8 +503,10 @@ body {
   }
 
   .header_button {
-    max-width: 163px;
-    height: 47px;
+    max-width: 196px;
+    height: 55px;
+    font-size: 24px;
+    font-weight: 700;
   }
 
   .header_wrapper {
@@ -487,5 +529,32 @@ body {
     text-align: center;
     font-size: 16px;
     margin-top: 20px;
+  }
+
+  .footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer_text_content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footer_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_icon {
+    width: 100%;
+    height: 100%;
+  }
+  .footer_link {
+    max-width: 180px;
+  }
+  .footer_links {
+    gap: 5px;
   }
 }
