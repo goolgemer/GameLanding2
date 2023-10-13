@@ -75,10 +75,26 @@ body {
   margin-bottom: 80px;
 }
 
+.header_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .header_logo {
-  width: 100%;
-  height: auto;
-  max-width: 85px;
+  width: 56px;
+  height: 49px;
+}
+
+.header_site-name {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header_site {
+  margin: 0;
 }
 
 .header_tabs {
@@ -379,6 +395,18 @@ body {
     font-size: 20px;
     text-align: center;
     margin-left: 0;
+  }
+
+  .header_site-name {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .header_logo {
+    width: 20px;
+    height: 19px;
   }
 
   .header_hero-img {
